@@ -2,7 +2,7 @@ import React from "react";
 
 const country = ({ data }) => {
   return (
-    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div className="mt-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       {data.map((country) => {
         const { name, flags, population, timezones, capital, area, cca2 } =
           country;
