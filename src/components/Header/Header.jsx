@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <div className="mb-5">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top py-2 ">
+      <nav className="navbar navbar-expand-lg  text-bg-info fixed-top py-2 ">
         <div className="container">
           <button
             className="navbar-toggler"
@@ -16,7 +16,7 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand  fs-3 text-primary fw-bold" href="#">
+          <a className="navbar-brand  fs-3 text-light fw-bold" href="#">
             Rest Countries..
           </a>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -42,7 +42,10 @@ const Header = () => {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button
+                className="btn btn-outline-light border-2 fw-bold"
+                type="submit"
+              >
                 Search
               </button>
             </form>

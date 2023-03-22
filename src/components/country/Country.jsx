@@ -8,7 +8,7 @@ const country = ({ data }) => {
           country;
 
         return (
-          <div className="col">
+          <div key={cca2} className="col">
             <div className="card">
               <img
                 src={flags.svg}
@@ -30,7 +30,7 @@ const country = ({ data }) => {
                     {cca2}
                   </span>
                 </div>
-                <p className="card-text list-group mt-3">
+                <div className="card-text list-group mt-3">
                   <p className="list-group-item list-group-item-action active">
                     Capital :{capital?.["0"]}
                   </p>
@@ -43,7 +43,7 @@ const country = ({ data }) => {
                   <p className="list-group-item list-group-item-action">
                     TimeZone : {timezones}
                   </p>
-                </p>
+                </div>
                 {/* tost section */}
               </div>
             </div>
